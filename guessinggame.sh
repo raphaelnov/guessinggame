@@ -5,14 +5,13 @@ echo "congratulate the user. Otherwise, it will "
 echo "continuously ask for the right guess."
 echo ""
 
-
 function guessing {
 	echo "Show me your guess: "
 	echo "Enter your guess and press [ENTER]: "
 	read guess
 }
-number=$(ls -l | grep ^- | wc -l)
 
+number=$(ls -l | grep ^- | wc -l)
 
 function giving_tries {
 	check=0
