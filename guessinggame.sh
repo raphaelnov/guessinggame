@@ -23,6 +23,12 @@ function giving_tries {
 		echo "You guessed it right!"
 		echo "$number"
 		let check=1
+	elif [ "$guess" -gt $number ]
+	then
+		echo "Your guess is a little bit higher, try lowering it.."
+	elif [ "$guess" -lt $number ]
+	then
+		echo "Your guess is a little bit lower, try increasing it.."
 	else  
 		echo "Try it again and be lucky!"
 	fi
